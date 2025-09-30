@@ -16,7 +16,7 @@ TABLE_NAME = os.getenv("TABLE_NAME", "data")
 
 CSV_FILENAME = os.getenv("CSV_FILENAME", "exported_data.csv")
 
-S3_BUCKET = os.getenv("S3_BUCKET", "gcr-output-01")
+S3_BUCKET = os.getenv("S3_BUCKET", "ingesta02-bucket-naye")
 S3_KEY = os.getenv("S3_KEY", CSV_FILENAME)
 
 def fetch_all_from_table():
