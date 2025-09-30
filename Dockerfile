@@ -2,8 +2,8 @@ FROM python:3-slim
 
 WORKDIR /programas/ingesta
 
-# Instalamos dependencias necesarias
-RUN pip3 install boto3 pymysql sqlalchemy cryptography pandas
+COPY requirements.txt .
+RUN pip3 install pymysql boto3 cryptography
 
 COPY . .
 
